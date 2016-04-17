@@ -1,19 +1,8 @@
 # code your #position_taken? method here!
 def position_taken?(board, position)
-  x = "X"
-  o = "O"
-  space = " "
-  blank = ""
-  nilo = nil
-  if board[position] == x
+  if board[position] == "X" || board[position] == "O"
     true
-  elsif board[position] == o
-    true
-  elsif board[position] == space
-    false
-  elsif board[position] == blank
-    false
-  elsif board[position] == nilo
+  else
     false
   end
 end
